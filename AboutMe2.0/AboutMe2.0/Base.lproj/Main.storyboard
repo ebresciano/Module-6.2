@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E2066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FqJ-ug-3ns">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Me View Controller-->
+        <scene sceneID="qsQ-jM-PeH">
+            <objects>
+                <viewController id="Oue-Do-KnZ" customClass="AboutMeViewController" customModule="AboutMe2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FC5-xe-ZMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTH-IK-tbN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sec-2g-4Gv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yeq-s7-7hn">
+                                <rect key="frame" x="0.0" y="390" width="320" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKN-vX-orJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="90"/>
+                                        <state key="normal" title="Food">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="foodToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="osA-ng-xUL"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="familyButton" id="Pqe-iS-P1u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-n3-pM1">
+                                        <rect key="frame" x="64" y="0.0" width="64" height="90"/>
+                                        <state key="normal" title="Music">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="vio-J5-ZaD"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="foodButton" id="GsP-ne-jAF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-yx-LHk">
+                                        <rect key="frame" x="128" y="0.0" width="64" height="90"/>
+                                        <state key="normal" title="Movies">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moviesToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="PEQ-Pd-RmE"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="sportsButton" id="S2p-8h-2x1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-Ta-eP4">
+                                        <rect key="frame" x="192" y="0.0" width="64" height="90"/>
+                                        <state key="normal" title="Sports">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sportsToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="k3H-b6-hbq"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="musicButton" id="88D-tk-Etd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fke-mH-9Iq">
+                                        <rect key="frame" x="256" y="0.0" width="64" height="90"/>
+                                        <state key="normal" title="Family">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="familyToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="yQD-MM-BeN"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="moviesButton" id="ZH1-vO-dJb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="a9g-nM-AME"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eva Bresciano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znf-8D-bI8">
+                                <rect key="frame" x="106" y="343" width="107.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ghosty Eva " translatesAutoresizingMaskIntoConstraints="NO" id="flK-Vy-qZb">
+                                <rect key="frame" x="35" y="82" width="250" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="Xe8-Eg-mDS"/>
+                                    <constraint firstAttribute="width" constant="250" id="eDC-jM-LHT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51551672520000003" green="0.0" blue="0.0052931531090000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="flK-Vy-qZb" firstAttribute="top" secondItem="FC5-xe-ZMQ" secondAttribute="bottom" constant="18" id="1V5-Mt-UuY"/>
+                            <constraint firstItem="flK-Vy-qZb" firstAttribute="centerX" secondItem="Yeq-s7-7hn" secondAttribute="centerX" id="A1R-rS-sb7"/>
+                            <constraint firstAttribute="trailing" secondItem="Yeq-s7-7hn" secondAttribute="trailing" id="F10-jf-Bb6"/>
+                            <constraint firstItem="znf-8D-bI8" firstAttribute="top" secondItem="flK-Vy-qZb" secondAttribute="bottom" constant="16" id="K9n-6n-DAM"/>
+                            <constraint firstItem="znf-8D-bI8" firstAttribute="centerX" secondItem="Sec-2g-4Gv" secondAttribute="centerX" id="YKU-JM-Tde"/>
+                            <constraint firstItem="Yeq-s7-7hn" firstAttribute="leading" secondItem="Sec-2g-4Gv" secondAttribute="leading" id="fBZ-ek-VLh"/>
+                            <constraint firstItem="Yeq-s7-7hn" firstAttribute="bottom" secondItem="eTH-IK-tbN" secondAttribute="top" id="s8S-k5-t2P"/>
+                            <constraint firstItem="Yeq-s7-7hn" firstAttribute="top" secondItem="Sec-2g-4Gv" secondAttribute="top" constant="490" id="yzj-iu-Rgv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yzj-iu-Rgv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="AuK-7J-Xmb"/>
+                    <connections>
+                        <outlet property="sportsToDetailView" destination="0FG-Ta-eP4" id="JTr-LS-Jfp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykc-r3-moU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="327"/>
+        </scene>
+        <!--Fun Facts Detail View Controller-->
+        <scene sceneID="er2-lq-mJY">
+            <objects>
+                <viewController id="0xq-cl-fuW" customClass="FunFactsDetailViewController" customModule="AboutMe2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VXF-bg-QkY"/>
+                        <viewControllerLayoutGuide type="bottom" id="62f-6W-bQt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g6u-M3-k5J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0We-mt-tIg">
+                                <rect key="frame" x="100" y="358" width="121" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PEg-iI-OCv">
+                                <rect key="frame" x="20" y="89" width="280" height="252"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0We-mt-tIg" secondAttribute="trailing" constant="83" id="8yF-Di-xqq"/>
+                            <constraint firstItem="62f-6W-bQt" firstAttribute="top" secondItem="0We-mt-tIg" secondAttribute="bottom" constant="92" id="WKJ-ob-4dz"/>
+                            <constraint firstItem="0We-mt-tIg" firstAttribute="leading" secondItem="g6u-M3-k5J" secondAttribute="leadingMargin" constant="84" id="tyc-y7-oIe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="detailImages" destination="PEg-iI-OCv" id="PCS-WZ-iOa"/>
+                        <outlet property="detailText" destination="0We-mt-tIg" id="EYO-5l-eVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oi9-HP-JEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="1219"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KMA-SP-UZJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FqJ-ug-3ns" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f0M-sE-WSY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Oue-Do-KnZ" kind="relationship" relationship="rootViewController" id="PBh-Vt-n0d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rHz-xr-lQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ghosty Eva " width="667" height="1371"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GsP-ne-jAF"/>
+    </inferredMetricsTieBreakers>
+</document>
