@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E2066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l7p-UC-Z5E">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Flashlight View Controller-->
+        <scene sceneID="bB6-ZK-0Wp">
+            <objects>
+                <viewController id="l7p-UC-Z5E" customClass="FlashlightViewController" customModule="Flashlight_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZaN-T5-DwS"/>
+                        <viewControllerLayoutGuide type="bottom" id="LVn-fv-EZL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aYx-3L-Ju2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiW-fr-tME">
+                                <rect key="frame" x="250" y="276" width="100" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="ON">
+                                    <color key="titleColor" red="1" green="0.90516196520000003" blue="0.1133460421" alpha="0.67988142730000001" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onOffButton:" destination="l7p-UC-Z5E" eventType="touchDown" id="vfS-Nv-rk6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yiW-fr-tME" firstAttribute="centerX" secondItem="aYx-3L-Ju2" secondAttribute="centerX" id="ZIP-xa-MCs"/>
+                            <constraint firstItem="yiW-fr-tME" firstAttribute="centerY" secondItem="aYx-3L-Ju2" secondAttribute="centerY" id="tyV-79-Ebl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzA-hi-lXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="313"/>
+        </scene>
+    </scenes>
+</document>

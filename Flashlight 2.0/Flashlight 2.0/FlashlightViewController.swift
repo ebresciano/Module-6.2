@@ -9,6 +9,8 @@
 import UIKit
 
 class FlashlightViewController: UIViewController {
+    
+    var isOn: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,30 @@ class FlashlightViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - Actions
+    
 
+   
+    @IBAction func onOffButton(sender: AnyObject) {
+        if isOn {
+            isOn = false
+            self.view.backgroundColor = UIColor.blackColor()
+            sender.setTitleColor(UIColor.yellowColor(), forState: UIControlState.Normal)
+            sender.setTitle("ON", forState: UIControlState.Normal)
+            
+        }
+        
+        else {
+            isOn = true
+            self.view.backgroundColor = UIColor.whiteColor()
+            sender.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+            sender.setTitle("OFF", forState: UIControlState.Normal)
+        }
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -33,3 +58,18 @@ class FlashlightViewController: UIViewController {
     */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
