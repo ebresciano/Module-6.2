@@ -7,28 +7,36 @@ var str = "Hello, playground"
 
 class Person {
     
-   let name: String?
-   let favColor: String?
-   let favMovie: String?
+   let name: String
+   var favColor: String?
+   var favMovie: String?
     
-    init(name: String?, favColor: String?, favMovie: String?){
+    init(name: String){
         self.name = name
-        self.favColor = favColor
-        self.favMovie = favMovie
        
     }
 
 }
 
 
-/*struct somePerson {
-    var name: String
-    var favMovie: String
+let somePerson = Person(name: "Eva")
+    somePerson.favMovie = "the Godfather"
+    somePerson.favColor = "red"
+
+    print("\(somePerson.name)'s favorite color is \(somePerson.favColor ?? "") and their favorite movie is \(somePerson.favMovie ?? "")")
+
+// if let favMovie = somePerson.favMovie {
+//print ("\(somePerson.name)'s favorite movie is \(favMovie)")
+
+/*func checkForNil() {
+   guard let movie = somePerson.favMovie else {
+        return
+    }
     
-    init(name: String, favMovie: String){
-        self.name = "Eva"
-        self.favMovie = "the Godfather"
-    } */
+    print("My favorite movie is \(movie)")
+}
+
+*/
 
 
 
