@@ -11,12 +11,21 @@ import UIKit
 class FunFactsDetailViewController: UIViewController {
     
     // MARK: - Outlets
+    
     @IBOutlet weak var detailImages: UIImageView!
     
     @IBOutlet weak var detailText: UITextField!
+    
+    var aboutMeText: String = ""
+    var image: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailText.text = "     THE BEST!"
+        if let image = image {
+            detailImages.image = image
+        }
 
         // Do any additional setup after loading the view.
     }

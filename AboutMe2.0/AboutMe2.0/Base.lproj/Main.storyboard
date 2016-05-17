@@ -27,8 +27,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="foodToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="osA-ng-xUL"/>
-                                            <segue destination="0xq-cl-fuW" kind="show" identifier="familyButton" id="Pqe-iS-P1u"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="foodSegue" id="7tr-XM-4t1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-n3-pM1">
@@ -37,8 +36,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="musicToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="vio-J5-ZaD"/>
-                                            <segue destination="0xq-cl-fuW" kind="show" identifier="foodButton" id="GsP-ne-jAF"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="musicSegue" id="Wnc-oT-cgO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-yx-LHk">
@@ -47,8 +45,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="moviesToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="PEQ-Pd-RmE"/>
-                                            <segue destination="0xq-cl-fuW" kind="show" identifier="sportsButton" id="S2p-8h-2x1"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="movieSegue" id="vhT-GI-BNy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-Ta-eP4">
@@ -57,8 +54,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="sportsToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="k3H-b6-hbq"/>
-                                            <segue destination="0xq-cl-fuW" kind="show" identifier="musicButton" id="88D-tk-Etd"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="sportSegue" id="CfW-fu-eo2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fke-mH-9Iq">
@@ -67,8 +63,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="familyToDetailView:" destination="Oue-Do-KnZ" eventType="touchUpInside" id="yQD-MM-BeN"/>
-                                            <segue destination="0xq-cl-fuW" kind="show" identifier="moviesButton" id="ZH1-vO-dJb"/>
+                                            <segue destination="0xq-cl-fuW" kind="show" identifier="familySegue" id="5W3-w6-Gor"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,9 +103,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="AuK-7J-Xmb"/>
-                    <connections>
-                        <outlet property="sportsToDetailView" destination="0FG-Ta-eP4" id="JTr-LS-Jfp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykc-r3-moU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,17 +122,22 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0We-mt-tIg">
                                 <rect key="frame" x="100" y="358" width="121" height="30"/>
+                                <color key="textColor" red="0.55933237075805664" green="0.086223892867565155" blue="0.10523975640535355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PEg-iI-OCv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PEg-iI-OCv">
                                 <rect key="frame" x="20" y="89" width="280" height="252"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.51551672520000003" green="0.0" blue="0.0052931531090000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="0We-mt-tIg" secondAttribute="trailing" constant="83" id="8yF-Di-xqq"/>
+                            <constraint firstItem="0We-mt-tIg" firstAttribute="top" secondItem="PEg-iI-OCv" secondAttribute="bottom" constant="17" id="Caz-ZV-EF4"/>
+                            <constraint firstItem="PEg-iI-OCv" firstAttribute="top" secondItem="VXF-bg-QkY" secondAttribute="bottom" constant="25" id="Jpp-JL-fdh"/>
                             <constraint firstItem="62f-6W-bQt" firstAttribute="top" secondItem="0We-mt-tIg" secondAttribute="bottom" constant="92" id="WKJ-ob-4dz"/>
+                            <constraint firstItem="PEg-iI-OCv" firstAttribute="centerX" secondItem="0We-mt-tIg" secondAttribute="centerX" id="fju-Ap-gPU"/>
+                            <constraint firstItem="PEg-iI-OCv" firstAttribute="leading" secondItem="g6u-M3-k5J" secondAttribute="leadingMargin" constant="4" id="oq5-ns-PCs"/>
                             <constraint firstItem="0We-mt-tIg" firstAttribute="leading" secondItem="g6u-M3-k5J" secondAttribute="leadingMargin" constant="84" id="tyc-y7-oIe"/>
                         </constraints>
                     </view>
@@ -152,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oi9-HP-JEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="1219"/>
+            <point key="canvasLocation" x="1038" y="918"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KMA-SP-UZJ">
@@ -178,6 +175,6 @@
         <image name="Ghosty Eva " width="667" height="1371"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GsP-ne-jAF"/>
+        <segue reference="Wnc-oT-cgO"/>
     </inferredMetricsTieBreakers>
 </document>
